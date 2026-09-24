@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilo.css">
+        <title>Tipos de Layouts</title>
+
+        <style>
+            body {
+                margin: 0; /* Remove a margem padrão do body */
+                padding: 0; /* Remove o padding padrão do body */
+            }
+
+            .conteudo {
+                display: flex; /* Ativa o layout flex */
+                flex-direction: row; /* Define a direção dos elementos como horizontal */
+                height: 100vh; /* Define a altura como 100% da viewport */
+            }
+
+            .barra-lateral {
+                background-color: #c70ad4; /* Define a cor de fundo da barra lateral */
+                flex: 1; /* Define o peso flexível da barra lateral */
+            }
+
+            .principal {
+                background-color: #6fd40a; /* Define a cor de fundo da área principal */
+                flex: 3; /* Define o peso flexível da área principal */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="conteudo">
+            <div class="barra-lateral">
+                
+            </div>
+
+            <div class="principal">
+
+            </div>
+        </div>
+    </body>
+</html>
