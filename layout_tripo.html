@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilo.css">
+        <title>Tipos de Layouts</title>
+
+        <style>
+            body {
+                margin: 0; /* Remove a margem padrão do body */
+                padding: 0; /* Remove o padding padrão do body */
+            }
+
+            .conteudo {
+                display: flex; /* Ativa o layout flex */
+                flex-direction: row; /* Define a direção dos elementos como horizontal */
+                height: 90vh; /* Define a altura como 100% da viewport */
+            }
+
+            .barra-lateral {
+                flex: 1; /* Define o peso flexível da barra lateral */
+            }
+
+            .principal {
+                flex: 3; /* Define o peso flexível da área principal */
+            }
+
+            .barra-titulo {
+                height: 10vh; /* Define a altura da barra de título */
+            }
+
+            .principal {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+            .principal .item {
+                width: 250px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                padding: 5px;
+                box-shadow: 1px 1px 1px #ccc;
+            }
+
+            .principal .item .imagem {
+                width: 200px;
+                height: 200px;
+                margin: 0 auto;
+                background-color: #000;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="barra-titulo">
+            <h1>Miguel</h1>
+        </div>
+
+        <div class="conteudo">
+            <div class="barra-lateral">
+                <div class="item">
+                    <a href="#">Habilidades</a>
+                </div>
+
+                <div class="item">
+                    <a href="#">Biografia</a>
+                </div>
+
+                <div class="item">
+                    <a href="#">Autoria</a>
+                </div>
+
+                <div class="item">
+                    <a href="#">Carreira</a>
+                </div>
+            </div>
+
+            <div class="principal">
+                <div class="item">
+                    <div class="imagem"></div>
+                    <h2>Jogar Bola</h2>
+                </div>
+
+                <div class="item">
+                    <div class="imagem"></div>
+                    <h2>Paçin do Jamal</h2>
+                </div>
+
+                <div class="item">
+                    <div class="imagem"></div>
+                    <h2>Dormir</h2>
+                </div>
+
+                <div class="item">
+                    <div class="imagem"></div>
+                    <h2>Arrumar PC</h2>
+                </div>
+
+                <div class="item">
+                    <div class="imagem"></div>
+                    <h2>Jogar Roblox</h2>
+                </div>
+
+                <div class="item">
+                    <div class="imagem"></div>
+                    <h2>Dormir denovo</h2>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
