@@ -15,19 +15,41 @@
             .conteudo {
                 display: flex; /* Ativa o layout flex */
                 flex-direction: row; /* Define a direção dos elementos como horizontal */
-                height: 90vh; /* Define a altura como 100% da viewport */
             }
 
             .barra-lateral {
                 flex: 1; /* Define o peso flexível da barra lateral */
             }
 
-            .principal {
-                flex: 3; /* Define o peso flexível da área principal */
+            .barra-titulo {
+                height: 15vh; /* Define a altura da barra de título */
+                background-color: #e9552c;
+                margin-bottom: 10px;
             }
 
-            .barra-titulo {
-                height: 10vh; /* Define a altura da barra de título */
+            .barra-titulo h1 {
+                color: #63fd96;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 40px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+
+            .barra-lateral .item {
+                padding: 10px;
+                border: 1px solid #ccc;
+                background-color: #63fd96;
+            }
+
+            .barra-lateral {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .barra-lateral .item a {
+                color: #000;
+                text-decoration: none;
             }
 
             .principal {
@@ -35,10 +57,13 @@
                 flex-direction: row;
                 flex-wrap: wrap;
                 gap: 10px;
+                justify-content: space-around;
+
+                flex: 3; /* Define o peso flexível da área principal */
             }
 
             .principal .item {
-                width: 250px;
+                width: 200px;
                 border: 1px solid #ccc;
                 border-radius: 5px;
                 padding: 5px;
